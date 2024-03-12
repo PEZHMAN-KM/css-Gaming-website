@@ -1,0 +1,247 @@
+/* 1. don't modify this style */
+@font-face {
+    font-family: poppinsBold;
+    src: url("..//assets/fonts/Poppins-Bold.ttf");
+  }
+  @font-face {
+    font-family: poppinsRegular;
+    src: url("..//assets/fonts/Poppins-Regular.ttf");
+  }
+  
+  * {
+    padding: 0;
+    margin: 0;
+  
+    box-sizing: border-box;
+    font-family: poppinsRegular;
+  }
+  
+  
+  /* 2. we use :root for default variables */
+  :root {
+    /* --"somekey-attr": "somevalue" i.e : */
+    --black-700: #000;
+    --blueGradiant: #3B2A9F;
+    --primary-100: #5141AA;
+    --secondary: #FA8305;
+    --box_bg: #1C140F;
+  }
+  /* 3. and we use it like this */
+  .elementOne {
+    /* var(--"somekey-attr") */
+    background-color: var(--black-700);
+  }
+  
+  
+  /* good luck */
+  
+  body {
+    background-color: var(--blueGradiant);
+  }
+/* ----------HEADER---------- */
+.header {
+    background-color: var(--blueGradiant);
+    color: white;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .head_Item {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    transition: ease 80ms;
+  }
+  
+  .head_Item:hover {
+    font-size: 120%;
+  }
+  .head_btn {
+    color: white;
+    padding:  10px 16px;
+    cursor: pointer;
+    background-color: var(--secondary);
+    border: none;
+    border-radius: 8px;
+    transition: ease 80ms;
+  }
+  .head_btn:hover {
+    scale: 120%;
+  }
+  .current_Item {
+    font-family: poppinsBold;
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    padding: 6px;
+    border-bottom: var(--secondary);
+    border-bottom-style: solid;
+    border-width: 5px;
+    border-radius: 2px;
+    transition: ease 80ms;
+  }
+  .current_Item:hover {
+    font-size: 120%;
+  }
+
+/* ----------MAIN---------- */
+.upper_Main {
+    background-color: var(--blueGradiant);
+    color: white;
+    display: flex;
+    justify-content: space-around ;
+    align-items: center;
+    padding: 40px 200px; 
+    margin-bottom: 100px;
+}
+  
+/* ----------UPPER SECTION---------- */
+.big_image{
+    width: 700px;
+    height: 700px;
+    object-fit: cover;
+    border-radius: 30px;
+}
+.color_Page {
+    color: var(--secondary);
+}
+.btn_GetTouch{
+  color: white;
+  padding:  10px 16px;
+  margin-top: 20px;
+  cursor: pointer;
+  background-color: var(--secondary);
+  border: none;
+  border-radius: 20px;
+  transition: ease 80ms;
+}
+.btn_GetTouch:hover {
+  scale: 120%;
+}
+
+/* ----------SECTION 2---------- */
+.card {
+    color: white;
+    background-color: var(--box_bg);
+    width: 400px;
+    padding: 50px;
+    border-radius: 20px;
+    transition: ease 80ms;
+}
+.card:hover {
+    scale: 110%;
+}
+.btn_Card1 {
+    border-style: none;
+    background-color: rgba(176, 0, 220, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+}
+.btn_Card1:hover {
+    scale: 110%;
+}
+.btn_Card2 {
+    border-style: none;
+    background-color: rgba(220, 66, 0, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+}
+.btn_Card2:hover {
+    scale: 110%;
+}
+.btn_Card3 {
+    border-style: none;
+    background-color: rgba(0, 220, 141, 0.1);
+    padding: 8px 15px;
+    border-radius: 10px;
+    color: white;
+    margin-bottom: 20px;
+    transition: ease 80ms;
+}
+.btn_Card3:hover {
+    scale: 110%;
+}
+
+/* ----------SECTION 3---------- */
+.section3 {
+    background-color: var(--box_bg);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 50px 0px;
+}
+
+/* ----------SECTION 4---------- */
+.mini_card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--box_bg);
+    width: 350px;
+    height: 350px;
+    padding: 50px;
+    border-radius: 30px;
+    margin: 0px 15px;
+    transition: ease 80ms;
+}
+.mini_card:hover {
+    scale: 110%;
+}
+
+.section4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+}
+
+/* ----------SECTION 5---------- */
+.section5 {
+    margin-top: 80px;
+    margin-left: 300px;
+  }
+.card_Black {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--box_bg);
+  padding: 30px 60px;
+  border-radius: 20px;
+  margin: 30px 280px;
+}
+.search_bar {
+  background-color: white;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+/* ----------Footer---------- */
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: end;
+    padding: 40px 100px ;
+  }
+  .internet {
+    background-color: white;
+    padding: 10px;
+    width: 50px;
+    border-radius: 100%;
+    margin: 5px;
+    cursor: pointer;
+    transition: ease 50ms;
+  }
+  .internet:hover{
+    scale: 120%;;
+  }
