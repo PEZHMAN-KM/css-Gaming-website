@@ -83,7 +83,6 @@ body {
   background-color: var(--blueGradiant);
   color: white;
   display: flex;
-  justify-content: space-between;
   padding: 40px 0px;
   margin-bottom: 20px;
   gap: 10%;
@@ -120,7 +119,6 @@ body {
   top: 230px;
   width: 90px;
 }
-/* ----------UPPER SECTION---------- */
 .povered_me {
   font-family: poppinsBold;
   margin-bottom: 20px;
@@ -143,6 +141,7 @@ body {
 /* ----------SECTION 2---------- */
 
 .title_Section {
+  margin-top: 10px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -164,11 +163,6 @@ body {
 }
 .btn_SeeAll:hover {
   scale: 120%;
-}
-
-.section2 {
-  background-color: var(--blueGradiant);
-  padding: 0px 20px;
 }
 .image_Cards {
   width: 250px;
@@ -221,10 +215,6 @@ body {
 }
 
 /* ----------SECTION 3---------- */
-
-.section {
-  background-color: var(--blueGradiant);
-}
 .center {
   display: flex;
   justify-content: center;
